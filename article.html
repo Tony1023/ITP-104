@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Article</title>
+        <style>
+            #header {
+                background-color:antiquewhite;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #headline {
+                background-color:azure;
+                font-style: italic;
+                font-weight: bold;
+                font-size: 25px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top: 4px solid black;
+                border-bottom: 2px solid gray;
+                text-align: center;
+            }
+            #author {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            #topImage img { /* Look for the img tag in #topImage */
+                width: 100%;
+            }
+            #topImage p {
+                color: gray;
+                font-size: 12px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                width: 50%;
+            }
+            #article {
+                background-color: blanchedalmond;
+                width: 560px;
+                float: left;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            #sidebar {
+                width: 380px;
+                background-color: aqua;
+                float: left;
+                padding: 10px;
+            }
+            #footer {
+                background-color: white;
+            }
+            #outerContainer {
+                width: 1000px;
+                margin-left: auto; /* auto calculate according to the browser's width */
+                margin-right: auto;
+            }
+            .clearClass {
+                clear: both; /* Clear my floats */
+            }
+            .articleImage {
+                background-color:aliceblue;
+                color: gray;
+                float: left;
+                width: 300px;
+                margin-right: 10px;
+            }
+            .articleImage img{
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outerContainer">
+            
+            <!-- div-s go as wide as possible and as high as it needs to be -->
+            <div id="header">
+                The New York Times
+            </div>
+
+            <div id="headline">
+                At Long Last, the Eagles Capture Their First Super Bowl
+            </div>
+
+            <div id="author">
+                By BEN SHPIGLE FEB. 4, 2018
+            </div>
+
+            <div id="topImage">
+                <img src="article_image01.jpg"/>
+                <p>
+                    The winning touchdown for the Eagles: tight end Zach Ertz dived into the end zone with 2:21 left in the fourth quarter. Credit AJ Mast for The New York Times
+                </p>
+            </div>
+
+            <div id="article">
+                <p>MINNEAPOLIS — Philadelphia is a grand old city with a grand old football tradition defined not by trophies hoisted but the cocktail of emotions — nihilistic despair tinged with unfounded confidence — produced by its beloved Eagles coming so close, so many times.</p>
+
+                <p>The last 57 years had passed without a championship. It was never Ron Jaworski’s turn or Randall Cunningham’s or Donovan McNabb’s. It was always something — always.</p>
+
+                <p>The paradigm shifted Sunday, when a backup quarterback who nearly retired two years ago and who had not taken a snap with the first-team offense until two months ago gave Philadelphia its first Super Bowl title at the expense of the N.F.L.’s enduring dynasty.</p>
+
+                <div class="articleImage">
+                    <img src="article_image02.jpg"/>
+                    <p>
+                        Nick Foles threw for 373 yards and was named the game’s most valuable player. Credit A J Mast for The New York Times
+                    </p>
+                </div>
+
+                <p>For the rest of his life, Nick Foles will be hailed as the savior who matched a resplendent Tom Brady and authored a victory against the New England Patriots for Philadelphia’s first football championship since 1960.</p>
+
+                <p>The final score — 41-33 — will lodge deep into the memory banks of a frenzied pro-Eagles crowd at U.S. Bank Stadium and the millions of delirious fans across the Delaware Valley, who will belt it out at work or family gatherings or watering holes as calculable proof that, yes, the Eagles did, in fact, win the Super Bowl.</p>
+
+                <p>It was Philadelphia’s second major sports championship since 1983, after the Phillies’ World Series victory in 2008. The last time the Eagles earned an N.F.L. championship, in the pre-Super Bowl era, they also conquered an iconic coach in Vince Lombardi and a Hall of Fame quarterback in Bart Starr, but that win came before Green Bay’s reign of dominance. In Brady and Bill Belichick, bidding for their sixth title together, these Eagles outdueled the N.F.L.’s premier comeback artists to avenge a defeat from their last Super Bowl meeting 13 years ago.</p>
+
+                <p>Before that game, Belichick inspired his players by relaying the victory parade route — of the Eagles. If Philadelphia has not been reduced to rubble, that parade will finally meander down Broad Street this week.</p>
+
+                <p>What made it possible was an unforgettable performance by Foles, who has started for Philadelphia since its star quarterback Carson Wentz tore up his knee on Dec. 10 in Los Angeles. Foles earned the Super Bowl’s Most Valuable Player Award for catching one touchdown and throwing for three more, including an 11-yarder to Zach Ertz with 2 minutes 21 seconds remaining that put the Eagles ahead, 38-33. The aggressiveness of Coach Doug Pederson, a former Eagles quarterback, helped outsmart Belichick en route to winning a championship that Pederson’s mentor, Andy Reid, never could in Philadelphia. And an improbable late stand by a defense that yielded 613 yards — 505 passing by Brady — produced the most critical play at the most critical moment of the season.</p>
+
+            </div>
+
+            <div id="sidebar">
+                Related Coverage
+                <ul>
+                    <li>Suddenly, Philadelphia Has a Major City Identity Crises</li>
+                    <li>How Nick Foles and the Eagles Tricked the Patriots</li>
+                    <li>How the Eagles Won Their First Super Bowl Title, Drive by Drive</li>
+                </ul>
+            </div>
+
+            <div class="clearClass"></div>
+
+            <div id="footer">
+                Copyright 2018. All Rights Reserved.
+            </div>
+
+        </div>
+    </body>
+</html>

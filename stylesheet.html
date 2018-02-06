@@ -1,0 +1,110 @@
+<!-- HTML skeleton starts here: -->
+<!doctype html>
+<html>
+	<head>
+		<title>Firstpage</title>
+		<!-- Organizing css statements, using stylesheet -->
+		<style>
+			h1 {
+				color: blue;
+			}
+			body {
+				background-color: lavender;
+				background-image: url("greenpattern.jpg");
+				/*background-repeat: no-repeat;*/
+				font-family: Arial;
+			} 
+			img {
+				width: 250px;
+			}
+			p {
+				font-size: 18px; 
+				line-height: 1.2;
+			}
+			/* hash for id, dot for class */
+			/* id is for single, class is for multiple */
+			.green-text {
+				color: green;
+				font-size: 16px;
+			}
+			.right-image {
+				width: 200px;
+				float: right;
+			}
+			#thick-black-border {
+				border-color: black;
+				border-width: 8px;
+				border-style: solid;
+				/* shorter way: */
+				/*
+				border: black 8px solid;
+				*/
+				border-radius: 10px /*50%*/;
+			}
+			#big-letter {
+				font-size: 36px;
+			}
+			#header {
+				text-align: center;
+				background-color: none;
+			}
+			#summary {
+				text-align: center;
+				background-color: beige;
+				font-style: italic;
+				color: gray;
+			}
+			#facts {
+				border-bottom: 1px solid gray;
+				margin-bottom: 10px;
+				padding-bottom: 10px; /* manually fitting the float */
+			}
+			#top3 {
+				padding-bottom: 55px;
+			}
+		</style>
+		<!-- Rules in curly braces, selecting ALL the tags specified -->
+	</head>
+	<body>
+	<!-- css property background color htmlcolorcodes.com-->
+		<div id="header">
+			<h1>All About Pikachu</h1> <!-- h1 = heading one -->
+			<img id="thick-black-border" src="Pikachu.png" alt="Pikachu"/>
+			<!-- The code in green is the attributes of the tag it's in -->
+			<!-- alt = alternative text when the image doesn't load -->
+		</div>
+		
+		<div id="summary">
+			<p><span id="big-letter">P</span>ikachu are a species of <strong>Pokemon</strong>, fictional creatures that appear in an assortment of video games, animated television shows and movies, trading card games, and comic books licensed by <em>The Pokemon Company</em>, a Japanese corporation.
+			</p> 
+			<!-- p = paragraph, strong = bold, em = emphasis = italic -->
+		</div>
+
+		<div id="facts">
+			<!-- Moved up here so that it does not float to the next section -->
+			<img class="right-image" src="raichu.jpg" alt="Raichu"/>
+			Facts:
+			<ul> <!-- Unsorted list, list -->
+				<li class="green-text">an electric type</li>
+				<li>is yellow</li>
+				<li>evolves into Raichu</li>
+			</ul>
+		</div>
+
+		<div id="top3">
+			<img class="right-image" src="pikachu-ketchup.jpg" alt="ketchup"/>
+			Top 3 things Pikachu love:
+			<ol> <!-- ordered list -->
+				<li>ketchup</li>
+				<li>apples</li>
+				<li>nice humans</li>
+			</ol>
+		</div>
+
+		<hr/> <!-- horizontal row self-closing tags -->
+
+		<p class="green-text">Click <a href="http://www.pokemon.com" target="_blank">here</a> to learn more about <br/>Pikachu.</p>
+		<!-- can give any tag a unique id, you'd better -->
+
+	</body>
+</html>
