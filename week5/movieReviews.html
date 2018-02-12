@@ -6,18 +6,85 @@
   <style>
     body {
       font-family: Baskerville;
+      background-color: aliceblue;
     }
     #outerContainer {
-      width: 1000px;
+      width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
     #title {
       text-align: center;
-      font-size: 60px;
+      font-size: 54px;
       border-bottom: 4px solid darkgreen;
     }
-    #title span, p{
-      font-size: 12px;
+    #title strong {
+      font-size: 28px;
     }
+    #title img {
+      width: 80px;
+    }
+    #title span{
+      font-size: 16px;
+    }
+    #title p {
+      font-size: 14px;
+    }
+    #spacing {
+      height: 12px;
+    }
+    .movie{
+      width: 530px;
+      height: 590px;
+      padding-left: 10px;
+      padding-right: 10px;
+      /* height: ; */
+      float: left;
+    }
+    .moviePoster {
+      width: 125px;
+      float: left;
+    }
+    .moviePoster img {
+      width: 95%;
+    }
+    .movieInfo {
+      font-size: 14px;
+      width: 180px;
+      border: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: right;
+    }
+    .movieInfo p {
+      margin: 5px;
+    }
+    #interstellar {
+      background-color: black;
+      color: whitesmoke;
+    }
+    #interstellar .movieInfo {
+      background-color: grey;
+    }
+    #inception {
+      background-color: lavender;
+    }
+    #inception .movieInfo {
+      background-color: lightskyblue;
+    }
+    #kingsman2 {
+      background-color: lightcoral;
+    }
+    #kingsman2 .movieInfo {
+      background-color: pink;
+    }
+    #wolfWarrior {
+      background-color: lightgoldenrodyellow;
+    }
+    #wolfWarrior .movieInfo {
+      background-color: orange;
+    }
+    
 
   </style>
   
@@ -26,14 +93,122 @@
 <body>
 <div id="outerContainer">
   <div id="title">
-    <img src="movie_icon.png" style="width: 100px"/>
-    What Moview Reviews <span>by Zhehao Lu</span>
-    <p>A small collection of movie reviews. More description...</p>
+    <img src="movie_icon.png"/>
+    Moview Reviews of MY Selection <span>by Zhehao Lu</span>
+    <p><strong>H</strong>ere is four of my favorite movies I selected. The movies' introductions and other information are cited from the film review website <a href="https://www.rottentomatoes.com" target="_blank"/>Rotten Tomatoes</a>. Some posters are from the same site, while others are searched from Google image.</p>
   </div>
 
+  <div id="spacing"></div>
+  <!-- Main sections -->
 
-  
+  <div class="movie" id="inception">
+    <h4>Inception</h4>
+    <div class="moviePoster"><img src="inception.jpg" alt="inception_poster"/></div>
+    <div class="movieInfo">
+      <p>Rating:	PG-13</p>
+      <p>Genre:	Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy</p>
+      <p>Directed By:	Christopher Nolan</p>
+      <p>Runtime:	148 minutes</p>
+    </div>
+    <p>
+      Introduction:<br/>Dom Cobb (Leonardo DiCaprio) doesn't steal things, he steals ideas. By projecting himself deep into the subconscious of his targets, he can glean information that even the best computer hackers can't get to. In the world of corporate espionage, Cobb is the ultimate weapon. But even weapons have their weakness, and when Cobb loses everything, he's forced to embark on one final mission in a desperate quest for redemption. This time, Cobb won't be harvesting an idea, but sowing one. Should he and his team of specialists succeed, they will have discovered a new frontier in the art of psychic espionage. They've planned everything to perfection, and they have all the tools to get the job done. Their mission is complicated, however, by the sudden appearance of a malevolent foe that seems to know exactly what they're up to, and precisely how to stop them.
+    </p>
+    <p>
+      "This endlessly fascinating swirl of a film could have come only from Nolan, who blends the cerebral twistiness of Memento (his thriller that moves backward in time) with the spectacular action of his Batman megahit, The Dark Knight."
+      <br/><i>-Caryn James, Newsday</i>
+    </p>
+    <p>
+        "It's just grade-A filmmaking."
+        <br/><i>-Stephen Whitty, Newark Star-Ledger</i>
+    </p>
+    <p>
+      "This is a brainy, brawny popcorn pleaser at its best. And one not easily forgotten."
+      <br/><i>-Kirk Baird, Toledo Blade</i>
+    </p>
+  </div>
 
+  <div class="movie" id="interstellar">
+    <h4>Interstellar</h4>
+    <div class="moviePoster"><img src="interstellar.jpg" alt="insterstellar_poster"/></div>
+    <div class="movieInfo">
+        <p>Rating:	PG-13</p>
+        <p>Genre:	Action & Adventure, Science Fiction & Fantasy</p>
+        <p>Directed By:	Christopher Nolan</p>
+        <p>Runtime:	169 minutes</p>
+    </div>
+    <p>
+      Introduction:<br/>With our time on Earth coming to an end, a team of explorers undertakes the most important mission in human history; traveling beyond this galaxy to discover whether mankind has a future among the stars.
+    </p>
+    <p>
+      "This is one of the most beautiful films I have ever seen."
+      <br/><i>-Richard Roeper, Chicago Sun-Times</i>
+    </p>
+    <p>
+        "...visually spectacular, complex, and both intellectually and emotionally stimulating..."
+        <br/><i>-Sebastian Zavala Kahn, Cinencuentro</i>
+    </p>
+    <p>
+      "Eye-popping visuals, an ambitious narrative, and a heart-racing soundtrack; one of Nolan's best."
+      <br/><i>-Robert Kojder, Flickering Myth</i>
+    </p>
+    <p>
+      "Christopher Nolan's spectacular film is filled with frustration, anger, and guilt, and also strives for acceptance and even redemption."
+      <br/><i>-Uri Klein, Haaretz</i>
+    </p>
+  </div>
+
+  <div class="movie" id="kingsman2">
+    <h4>Kingsman: The Golden Circle</h4>
+    <div class="moviePoster"><img src="kingsman.jpg" alt="kingsman2_poster"/></div>
+    <div class="movieInfo">
+      <p>Rating:	PG-13</p>
+      <p>Genre:	Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy</p>
+      <p>Directed By:	Christopher Nolan</p>
+      <p>Runtime:	148 minutes</p>
+    </div>
+    <p>
+      Introduction:<br/>"Kingsman: The Secret Service" introduced the world to Kingsman - an independent, international intelligence agency operating at the highest level of discretion, whose ultimate goal is to keep the world safe. In "Kingsman: The Golden Circle," our heroes face a new challenge. When their headquarters are destroyed and the world is held hostage, their journey leads them to the discovery of an allied spy organization in the US called Statesman, dating back to the day they were both founded. In a new adventure that tests their agents' strength and wits to the limit, these two elite secret organizations band together to defeat a ruthless common enemy, in order to save the world, something that's becoming a bit of a habit for Eggsy...
+    </p>
+    <p>
+      "This is a fun, ferocious follow-up to one of the most enjoyable films of recent years, and we can only hope that Eggsy et al are back for a third outing at some point down the line."
+      <br/><i>-Andrew Pollard, Starbust</i>
+    </p>
+    <p>
+        "The movie is too long, too violent, too silly-too everything. Yet for those who enjoyed the original Kingsman, it is a more than adequate second act. To put it another way: First time satire, second time farce."
+        <br/><i>-Christopher Orr, The Atlantic</i>
+    </p>
+    <p>
+      "... while this movie is completely unnecessary, it's also totally enjoyable."
+      <br/><i>-Hannah Lynn, Pittsburgh City Paper</i>
+    </p>
+  </div>
+
+  <div class="movie" id="wolfWarrior">
+    <h4>Wolf Warrior II</h4>
+    <div class="moviePoster"><img src="wolf_warrior.jpg" alt="wolfWarrior_poster"/></div>
+    <div class="movieInfo">
+      <p>Rating: NR</p>
+      <p>Genre:	Action & Adventure, Art House & International, Drama</p>
+      <p>Directed By:	Jing Wu</p>
+      <p>Runtime:	120 minutes</p>
+    </div>
+    <p>
+      Introduction:<br/>The Wolf Warrior is back, bigger and badder than ever, in this action-packed sequel to the 2015 blockbuster hit. With his career in tatters, China's deadliest Special Forces operative has settled into a quiet life on the sea. But when he crosses paths with a sadistic band of mercenaries terrorizing innocent civilians, he must reaffirm his duty as a soldier and save the day once again.
+    </p>
+    <p>
+        "Wu Jing's record-breaking Chinese-produced action-adventure gives audiences plenty of bang for their bucks."
+        <br/><i>-Joe Leydon, Variety</i>
+    </p>
+    <p>
+        "Its corny display of nationalist pride aside, Wu's superior sequel to the laughably scripted Wolf Warrior should at least satisfy genre audiences with its slam-bang action."
+        <br/><i>-Edmund Lee, South China Morning Post</i>
+    </p>
+    <p>
+        "A Chinese variation on the white savior myth, but also a slam-bang action spectacular."
+        <br/><i>-Scott Mendelson, Forbes</i>
+    </p>
+    
+  </div>
 
 </div>
 </body>
