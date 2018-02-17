@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<title>Photo Gallery</title>
+
+	<style>
+		/*div {
+			border: 1px solid red;
+		}*/
+		.dogimage {/* img */
+			width: 200px;
+			height: 200px;
+			/* fixes image gaps in divs */
+			display: block;
+		}
+		.imgbox { /* div */
+			width: 200px;
+			float: left;
+
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+
+			/* Shorthand to write margins on all four sides */
+			margin: 15px;
+
+			border: 1px solid red;
+		}
+		.clear {
+			clear: both;
+		}
+		#outercontainer {
+			/* center the container somehow */
+			background-color: blue;
+			/* (15 + 1 + 200 + 1 + 15) x 3 = 696px */
+			width: 696px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		#profile-pic {
+			/*background-color: orange;*/
+			width: 150px;
+			float: left;
+			padding-left: 20px;
+			padding-right: 30px;
+			/* width became 150 + 50 = 200px, so #profile-info's width changed to 496px (originally 546px) */
+		}
+		#profile-pic img {
+			width: 150px;
+			border-radius: 50%;
+		}
+		#profile-info {
+			/*background-color: yellow; */
+			/* 696 - 150 */
+			width: 496px;
+			float: left;
+		}
+		#header {
+			background-color: gray;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="outercontainer">
+		<div id="header">
+			<div id="profile-pic">
+				<img src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg01.jpg" />
+			</div>
+
+			<div id="profile-info">
+				<h2>instadog</h2>
+				<p>Pics of dogs. Visit my website at: <a href="http://cutedogs.com">cutedogs.com</a></p>
+			</div>
+			<!-- Clear float -->
+			<div class="clear"></div>
+		</div>
+
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg01.jpg"/>
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg02.jpg" />
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg03.jpg" />
+		</div>
+
+		<!-- Go to next line, so clear the float -->
+		<div class="clear"></div>
+
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg04.jpg" />
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg05.jpg" />
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg06.jpg" />
+		</div>
+
+		<!-- Go to next line, so clear the float -->
+		<div class="clear"></div>
+
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg07.jpg" />
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg08.jpg" />
+		</div>
+		<div class="imgbox">
+			<img class="dogimage" src="http://itpwebdev.com/wp-content/uploads/2017/09/dogimg09.jpg" />
+		</div>
+
+		<!-- Also clear float here, to indicated we are DONE with floating -->
+		<div class="clear"></div>
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+
