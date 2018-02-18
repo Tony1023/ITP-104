@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Calendar</title>
+
+<script type="text/javascript">
+	function generateEmptyCells(first, last, started) {
+		if (started) {
+			for (i = first; i <= last; ++i) {
+				document.writeln("<div class=\"dateBox\">" + i + "</div>")
+				if (i % 7 == 2)
+					document.writeln("<div class=\"clearFloat\"></div>")
+			}
+		} else {
+			for (i = 0; i < first; ++i) {
+				document.writeln("<div class=\"emptyDateBox\"></div>")
+			}
+		}
+	}
+</script>
+
+<style>
+	body {
+		background-color: lavender;
+	}
+	#outercontainer {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#headpic {
+		width: 1000px;
+		height: 500px;
+		background-image: url("wallpaper.jpg");
+		background-size: cover;
+		position: relative;
+	}
+	#monthInfo {
+		text-align: center;
+		width: 1000px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: darkblue;
+		color: white;
+		opacity: 0.6;
+	}
+	.dayBox {
+		background-color: lightblue;
+		float: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 140.8px;
+		margin: 1px;
+		text-align: center;
+	}
+	.emptyDateBox {
+		background-color: gainsboro;
+		width: 130.8px;
+		height: 130px;
+		padding: 5px;
+		float: left;
+		margin: 1px;
+	}
+	.dateBox {
+		background-color: lightblue;
+		width: 130.8px;
+		height: 130px;
+		padding: 5px;
+		float: left;
+		margin: 1px;
+		position: relative;
+	}
+	.dateBox img {
+		width: 80px;
+		position: absolute;
+		right: 30px;
+		bottom: 40px;
+	}
+	.dateBox span {
+		align-self: center;
+		position: absolute;
+		bottom: 10px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.exams {
+		background-color: lightcoral;
+	}
+	#MATH-226 span {
+		right: 17px;
+	}
+	#PHIL-236 span {
+		right: 19px;
+	}
+	#CSCI-109 span, #CSCI-103 span {
+		right: 18.5px;
+	}
+	#flyHome {
+		background-color: dodgerblue;
+	}
+	#flyHome span {
+		right: 5px;
+	}
+	#Xmas {
+		background-color: whitesmoke;
+	}
+	#Xmas span{
+		right: 36px;
+	}
+	.clearFloat {
+		clear: both;
+	}
+
+</style>
+
+</head>
+
+<body>
+<div id="outercontainer">
+	<div id="headpic">
+		<div id="monthInfo">
+			<h1>December 2017</h1>
+		</div>
+	</div>
+
+	<div class="dayBox"> <strong>Sunday</strong> </div>
+	<div class="dayBox"> <strong>Monday</strong> </div>
+	<div class="dayBox"> <strong>Tuesday</strong> </div>
+	<div class="dayBox"> <strong>Wednsday</strong> </div>
+	<div class="dayBox"> <strong>Thursday</strong> </div>
+	<div class="dayBox"> <strong>Friday</strong> </div>
+	<div class="dayBox"> <strong>Saturday</strong> </div>
+
+	<div class="clearFloat"></div>
+
+	<script>generateEmptyCells(5,0,false)</script>
+
+	<script>generateEmptyCells(1,5,true)</script>
+
+	<div class="dateBox exams" id="MATH-226">
+		6<br/>
+		<img src="integral.png"/>
+		<span>MATH226 Exam</span>
+	</div>
+	<div class="dateBox exams" id="PHIL-236">
+		7
+		<img src="space.png"/>
+		<span>PHIL236 Exam</span>
+	</div>
+	<div class="dateBox exams" id="CSCI-109">
+		8
+		<img src="graph.png"/>
+		<span>CSCI109 Exam</span>
+	</div>
+
+	<script>generateEmptyCells(9,10,true)</script>
+
+	<div class="dateBox exams" id="CSCI-109">
+		11
+		<img src="c++.png"/>
+		<span>CSCI103 Exam</span>
+	</div>
+
+	<script>generateEmptyCells(12,13,true)</script>
+
+	<div class="dateBox" id="flyHome">
+		14
+		<img src="plane.png"/>
+		<span>Flight back to China</span>
+	</div>
+
+	<script>generateEmptyCells(15,24,true)</script>
+
+	<div class="dateBox" id="Xmas">
+		25
+		<img src="tree.png"/>
+		<span>Christmas!</span>
+	</div>
+
+	<script>
+		generateEmptyCells(26,31,true)
+		generateEmptyCells(6,0,false)
+	</script>
+
+	<div class="clearFloat"></div>
+
+</div>
+</body>
+</html>
