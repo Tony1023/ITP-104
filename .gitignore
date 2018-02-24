@@ -48,3 +48,7 @@
 *.out
 *.app
 
+# Images
+*.jpg
+*.jepg
+*.png
