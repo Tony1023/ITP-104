@@ -3,17 +3,97 @@
 
 <head>
 	<title>Form</title>
+	<style>
+		body {
+			font-family: Arial;
+		}
+		#wrapper {
+			background-color: #ddd;
+			width: 600px;
+			margin: auto;
+			margin-top: 40px;
+			padding: 20px;
+		}
+		.formRow {
+			margin-bottom: 10px;
+		}
+		label {
+			width: 200px;
+			float: left;
+			text-align: right;
+			margin-right: 10px;
+		}
+		.clearFloat {
+			clear: both;
+		}
+		.exceptionLabel {
+			width: auto;
+			float: none;
+		}
+	</style>
 </head>
 
 <body>
 
 <div id="wrapper">
-	
+
+	<!-- action: what will be done after "submit" is hit" -->
+	<form action="" method="">
+		<!-- input is a self-closing tag -->
+		<div class="formRow">
+			<label for="firstname">First Name</label> <!-- for some id, associated now -->
+			<input type="text" placeholder="Enter your first name" id="firstname"/>
+		</div>
+
+		<div class="formRow">
+			<label for="password">Password</label>
+			<input type="password" placeholder="Enter your passord" id="password"/>
+		</div>
+
+		<div class="formRow">
+			<label for="gener">Gender</label>
+			<!-- name to enable multiple choice style -->
+			<input type="radio" name="gener" id="male"/>
+			<label for="male" class="exceptionLabel">Male</label>
+			<input type="radio" name="gener" id="female"/>
+			<label for="female" class="exceptionLabel">Female</label>
+		</div>
+
+		<div class="formRow">
+			<label>Hobbies</label>
+			<input type="checkbox" id="running" name="hobbies"/>
+			<label for="running" class="exceptionLabel">Running</label>
+			<input type="checkbox" id="rowing" name="hobbies"/>
+			<label for="rowing" class="exceptionLabel">Rowing</label>
+			<input type="checkbox" id="hiking" name="hobbies"/>
+			<label for="hiking" class="exceptionLabel">Hiking</label>
+		</div>
+
+		<div class="formRow">
+			<label for="schoolYear">School Year</label>
+			<select id="schoolYear">
+				<option>--</option>
+				<option>Freshman</option>
+				<option>Sophomore</option>
+				<option>Junior</option>
+				<option>Senior</option>
+			</select>
+		</div>
+
+		<div class="formRow">
+			<label for="comments">Comments</label>
+			<textarea placeholder="Leave comments here." id="comments"></textarea>
+		</div>
+
+		<div class="formRow">
+			<input type="submit"/>
+			<input type="reset"/>
+			<button>Do Nothing</button>
+		</div>
+
+	</form>
+
 </div>
-
-
-
-
 
 </body>
 
