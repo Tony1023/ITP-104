@@ -1,0 +1,234 @@
+<!doctype html>
+<head>
+<title>Games Survey</title>
+<style>
+	body {
+		background-color: black;
+		color: white;
+	}
+	#wrapper {
+		width: 500px;
+		margin: auto;
+	}
+	#headerPic {
+		width: 500px;
+		height: auto;
+	}
+	#headerPic img {
+		width: 500px;
+	}
+	#surveyTitle {
+		width: 450;
+		text-align: center;
+		margin: 25px;
+	}
+	#personalInfo {
+		border-radius: 10px;
+		border: 2px solid white;
+		padding: 0px 20px 20px 20px;
+	}
+	#personalInfo .heading {
+		text-align: center;
+	}
+	#personalInfo .formRow {
+		margin-bottom: 5px;
+	}
+	#personalInfo label {
+		width: 100px;
+		float: left;
+		text-align: right;
+		margin-right: 10px;
+	}
+	#personalInfo .exceptionLabel {
+		float: none;
+		width: auto;
+	}
+	#personalInfo #gamesPlayed, #gamesWatched, #buttons {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.formRow > textarea {
+		width: 250px;
+		height: 75px;
+	}
+	.clearFloat {
+		clear: both;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="headerPic">
+		<img src="pac.jpg">
+	</div>
+	<div id="surveyTitle">
+		<h1>Do You Follow Any Games?</h1>
+	</div>
+	
+	<form action="" method="">
+		<div id="personalInfo">
+			<div class="heading"><h3>A little about you...</h3></div>
+			<div class="formRow">
+				<label for="nameField">Name:</label>
+				<input type="text" name="name" id="nameField" placeholder="Alexandr Kostyliev">
+				<input type="checkbox" name="anonymous" id="anonymous">
+				<label for="anonymous" class="exceptionLabel">Anonymous</label>
+			</div>
+			<div class="formRow">
+				<label for="emailField">Email:</label>
+				<input type="text" name="email" id="emailField" placeholder="example@usc.edu">
+			</div>
+			<div class="formRow">
+				<label>Gender:</label>
+				<input type="radio" name="gender" id="female">
+				<label for="female" class="exceptionLabel">Female</label>
+				<input type="radio" name="gender" id="male">
+				<label for="male" class="exceptionLabel">Male</label>
+				<input type="radio" name="gender" id="other">
+				<label for="other" class="exceptionLabel">Other</label>
+			</div>
+			<div class="formRow">
+				<label for="age">Age:</label>
+				<select name="age" id="age">
+					<option>--</option>
+					<option><=7</option>
+					<script type="text/javascript">
+						for (var age = 8; age <= 64; ++age) {
+							document.writeln("<option>" + age + "</option>");
+						}
+					</script>
+					<option>>=65</option>
+				</select>
+			</div>
+			<div class="formRow">
+				<label for="occupation">Occupation:</label>
+				<select name="occupation" id="occupation">
+					<option>--</option>
+					<option>High School Student</option>
+					<option>Undergraduate Student</option>
+					<option>Graduate Student</option>
+					<option>Doctorial Student</option>
+					<option>Employed</option>
+				</select>
+			</div>
+			<div class="clearFloat"></div>
+		</div>
+
+		<div class="clearFloat"></div>
+
+		<div id="gamesPlayed">
+			<h3>What games do you play?</h3>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playLOL">
+				<label for="playLOL">League of Legends</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playdota">
+				<label for="playota">DOTA2</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playcsgo">
+				<label for="playcsgo">Counter-Strike: Global Offensive</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playow">
+				<label for="playow">Overwatch</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playwarc">
+				<label for="playwarc">Warcraft</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playpubg">
+				<label for="playpubg">PlayerUnknown's Battlegrounds</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playcod">
+				<label for="playcod">Call of Duty</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playfifa">
+				<label for="playfifa">FIFA</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="play2k">
+				<label for="play2k">2k-series</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playassa">
+				<label for="playassa">Assassin's Creed</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playgetover">
+				<label for="playgetover">Getting Over It with Bennett Foddy</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playfallflat">
+				<label for="playfallflat">Human: Fall Flat</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesPlayed" id="playOtherGame">
+				<label for="playOtherGame">Other:</label>
+			</div>
+			<div class="formRow">
+				<textarea placeholder="Pac man..." name="gamesPlayed" id="playOtherGames"></textarea>
+			</div>
+			<div class="clearFloat"></div>
+		</div>	
+
+		<div id="gamesWatched">
+			<h3>What games do you watch, or follow the professional scene?</h3>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchLOL">
+				<label for="watchLOL">League of Legends</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchdota">
+				<label for="watchdota">DOTA2</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchcsgo">
+				<label for="watchcsgo">Counter-Strike: Global Offensive</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchow">
+				<label for="watchow">Overwatch</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchwarc">
+				<label for="watchwarc">Warcraft</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchpubg">
+				<label for="watchpubg">PlayerUnknown's Battlegrounds</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchfifa">
+				<label for="watchfifa">FIFA</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watch2k">
+				<label for="watch2k">2k-series</label>
+			</div>
+			<div class="formRow">
+				<input type="checkbox" name="gamesWatched" id="watchOtherGame">
+				<label for="watchOtherGame">Other:</label>
+			</div>
+			<div class="formRow">
+				<textarea placeholder="Pac man..." name="gamesWatched" id="watchOtherGames"></textarea>
+			</div>
+			<div class="clearFloat"></div>
+		</div>
+		<div id="buttons">
+			<div class="formRow">
+				<input type="submit">
+				<input type="reset">
+			</div>
+		</div>
+		<div class="clearFloat"></div>
+	</form>
+
+</div>
+</body>
