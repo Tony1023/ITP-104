@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+	<title>Albert Einstein | Twitter</title>
+	<style>
+		body {
+			background-color: #e7ecf0;
+		}
+		#wrapper {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#header {
+			background-color: white;
+			text-align: center;
+			font-size: 3em;
+			font-weight: bold;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		#profile {
+			width: 240px;
+			float: left;
+		}
+		#avatar {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			width: 180px;
+			height: 180px;
+			border-radius: 98px;
+			border: solid white 8px;
+			background-image: url("einstein.jpg");
+			background-size: contain;
+		}
+		#account {
+			text-align: center;
+		}
+		#account strong {
+			font-size: 24px;
+		}
+		.account {
+			color: gray;
+		}
+		#main {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		#profile p {
+			font-size: 16px;
+			display: block;
+			margin-left: 12px;
+			margin-right: 12px;
+		}
+		#tweets {
+			width: 520px;
+			background-color: white;
+			float: left;
+			padding: 20px;
+		}
+		#newTweet {
+			width: 460px;
+		}
+		.tweetRow {
+			padding-top: 10px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid skyblue;
+		}
+		.tweetfield {
+			margin-top: 18px;
+		}
+		.tweetfield img {
+			width: 100%;
+		}
+		#exceptionRow {
+			padding-top: 0;
+			padding-bottom: 20px;
+		}
+		#copyright {
+			text-align: center;
+			background-color: white;
+		}
+		.clearFloat {
+			clear: both;
+		}
+
+	</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+	<div id="header">
+		Twitter
+	</div>
+
+	<div id="main">
+
+		<div id="profile">
+			<div id="avatar"></div>
+			<div id="account">
+				<strong>Albert Einstein</strong>
+				<br/>
+				<span class="account">@AlbertEinstein</span>
+			</div>
+			<p>
+				Official Twitter account of the World's Favorite Genius.
+			</p>
+		</div>
+
+		<div id="tweets">
+			<div class="tweetRow" id="exceptionRow">
+				<form action="" method="">
+					<input type="text" id="newTweet">
+					<input type="submit" value="Tweet">
+				</form>
+			</div>
+			<div class="tweetRow">
+				<strong>Albert Einstein</strong> <span class="account">@AlbertEinstein</span> - <i>4 minutes ago</i>
+				<div class="tweetfield">Check out my biography written by Walter Isaacson: <a href="https://twitter.com/">http://t.co/bio</a></div>
+			</div>
+			<div class="tweetRow">
+				<strong>Albert Einstein</strong> <span class="account">@AlbertEinstein</span> - <i>5 hours ago</i>
+				<div class="tweetfield">Try not to become a man of success, but rather try to become a man of value.</div>
+			</div>
+			<div class="tweetRow">
+				<strong>Albert Einstein</strong> <span class="account">@AlbertEinstein</span> - <i>2 days ago</i>
+				<div class="tweetfield">
+					<img src="einstein-quote.jpg">
+				</div>
+			</div>
+			<div class="tweetRow">
+				<strong>Albert Einstein</strong> <span class="account">@AlbertEinstein</span> - <i>2 days ago</i>
+				<div class="tweetfield">
+					A person who has never made a mistake never tried anything new.
+				</div>
+			</div>
+			
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+
+	<div id="copyright">
+		Copyright 2018
+	</div>
+
+</div>
+</body>
+</html>
