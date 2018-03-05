@@ -78,35 +78,24 @@
 		right: 30px;
 		bottom: 40px;
 	}
-	.dateBox span {
-		align-self: center;
-		position: absolute;
-		bottom: 10px;
-		margin-right: auto;
-		margin-left: auto;
+	.dateBox > .events {
+		width: 135px;
+		text-align: center;
+		margin: 90px auto 0 auto;
 	}
 	.exams {
 		background-color: lightcoral;
 	}
-	#MATH-226 span {
-		right: 17px;
-	}
-	#PHIL-236 span {
-		right: 19px;
-	}
-	#CSCI-109 span, #CSCI-103 span {
-		right: 18.5px;
-	}
 	#flyHome {
 		background-color: dodgerblue;
 	}
-	#flyHome span {
+	#flyHome div {
 		right: 5px;
 	}
 	#Xmas {
 		background-color: whitesmoke;
 	}
-	#Xmas span{
+	#Xmas div{
 		right: 36px;
 	}
 	.clearFloat {
@@ -139,28 +128,28 @@
 
 	<script>generateEmptyCells(1,5,true)</script>
 
-	<div class="dateBox exams" id="MATH-226">
-		6<br/>
+	<div class="dateBox exams">
+		6
 		<img src="integral.png"/>
-		<span>MATH226 Exam</span>
+		<div class="events">MATH226 Exam</div>
 	</div>
-	<div class="dateBox exams" id="PHIL-236">
+	<div class="dateBox exams">
 		7
 		<img src="space.png"/>
-		<span>PHIL236 Exam</span>
+		<div class="events">PHIL236 Exam</div>
 	</div>
-	<div class="dateBox exams" id="CSCI-109">
+	<div class="dateBox exams">
 		8
 		<img src="graph.png"/>
-		<span>CSCI109 Exam</span>
+		<div class="events">CSCI109 Exam</div>
 	</div>
 
 	<script>generateEmptyCells(9,10,true)</script>
 
-	<div class="dateBox exams" id="CSCI-103">
+	<div class="dateBox exams">
 		11
 		<img src="c++.png"/>
-		<span>CSCI103 Exam</span>
+		<div class="events">CSCI103 Exam</div>
 	</div>
 
 	<script>generateEmptyCells(12,13,true)</script>
@@ -168,7 +157,7 @@
 	<div class="dateBox" id="flyHome">
 		14
 		<img src="plane.png"/>
-		<span>Flight back to China</span>
+		<div class="events">Flight back to China</div>
 	</div>
 
 	<script>generateEmptyCells(15,24,true)</script>
@@ -176,7 +165,7 @@
 	<div class="dateBox" id="Xmas">
 		25
 		<img src="tree.png"/>
-		<span>Christmas!</span>
+		<div class="events">Christmas!</div>
 	</div>
 
 	<script>
