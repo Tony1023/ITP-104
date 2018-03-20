@@ -23,17 +23,17 @@
 			width: 240px;
 			float: left;
 		}
-		#avatar {
+		#avatar img{
+			/* remember to update the page on site after the grades are out */
+			display: block;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 30px;
 			margin-bottom: 10px;
 			width: 180px;
 			height: 180px;
-			border-radius: 98px;
+			border-radius: 50%;
 			border: solid white 8px;
-			background-image: url("einstein.jpg");
-			background-size: contain;
 		}
 		#account {
 			text-align: center;
@@ -99,7 +99,9 @@
 	<div id="main">
 
 		<div id="profile">
-			<div id="avatar"></div>
+			<div id="avatar">
+				<img src="einstein.jpg"/>
+			</div>
 			<div id="account">
 				<strong>Albert Einstein</strong>
 				<br/>
