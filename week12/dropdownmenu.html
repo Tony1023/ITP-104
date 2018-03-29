@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Navigation</title>
+        <style>
+            /* Remove bullets from the bulleted list */
+            #menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            #menu li {
+                float: left;
+                position: relative;
+            }
+            #menu li a {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                width: 100px;
+                height: 30px;
+                /* Converts a link into a block element, kinda like a <div> */
+                display: block;
+                text-align: center;
+                line-height: 30px;
+            }
+            #menu li a:hover {
+                background-color: #b20000;
+            }
+            /* ul ul refers to my secondary menu items */
+            #menu ul ul {
+                visibility: hidden;
+
+                position: absolute;
+                top: 30px;
+                left: 0px;
+            }
+            #menu ul li:hover ul {
+                visibility: visible;
+            }
+        </style>
+    </head>
+
+    <body>
+        CSS and HTML Resources:
+        <br />
+
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="https://webdev.usc.edu">Webdev</a>
+                    <ul>
+                        <li>
+                            <a href="https://webdev.usc.edu/itp104m">ITP104M</a>
+                        </li>
+                        <li>
+                            <a href="https://webdev.usc.edu/itp104t">ITP104T</a>
+                        </li>
+                        <li>
+                            <a href="https://webdev.usc.edu/itp104w">ITP104W</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="https://w3schools.com">W3Schools</a>
+                    <ul>
+                        <li>
+                            <a href="https://w3schools.com/html/default.asp">HTML</a>
+                        </li>
+                        <li>
+                            <a href="https://w3schools.com/css/default.asp">CSS</a>
+                        </li>
+                    </ul>
+                </li> 
+
+                <li>
+                    <a href="http://www.csszengarden.com/">Zen Garden</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
