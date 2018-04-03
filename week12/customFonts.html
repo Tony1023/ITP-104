@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Font Playground</title>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P" rel="stylesheet">
+	<style>
+		/* 		
+		@font-face {
+			font-family: MY_FONT; /* To use: body { font-family: MY_FONT; } * /
+			src: url(FONT_FILE.ttf); /* Remember to upload this file to the server * /
+		} */
+		body {
+			font-family: sans-serif;
+		}
+		#title {
+			font-family: 'Press Start 2P', cursive; /* After the comma--backup plan for fonts */
+		}
+		p {
+			font-family: 'Orbitron', sans-serif;
+		}
+		video {
+			width: 640px;
+		}
+		div {
+			width: 640px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id='title'>Welcome!</h1>
+	<p>Let's test this font out!</p>
+
+	<video id='dogVid' controls>
+		<source src="dog.webm" type='video/webm'/>
+		<source src="dog.mp4" type="video/mp4">
+		<source src="dog.ogv" type="video/ogg">
+		Your browser does not support the video tag.
+	</video>
+
+
+	<div>
+		<iframe width='560' height='315' src="https://www.youtube.com/watch?v=I266OCfvgOo" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div>
+		<a href="https://twitter.com/Tony1023Lv?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Tony1023Lv</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+
+	<div id='tweets'>
+		<a class="twitter-timeline" href="https://twitter.com/Cristiano?ref_src=twsrc%5Etfw">Tweets by Cristiano</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+</body>
+</html>
