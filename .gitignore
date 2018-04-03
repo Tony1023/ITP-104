@@ -48,3 +48,7 @@
 *.out
 *.app
 
+# Videos
+*.mp4
+*.ogv
+*.webm
