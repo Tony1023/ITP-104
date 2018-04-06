@@ -1,10 +1,70 @@
 <!doctype html>
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Page Title</title>
+  <style>
+    body {
+      margin: 0;
+      color:floralwhite;
+    }
+    #bgpic {
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 1000px;
+      width: 100%;
+      top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: -1;
+    }
+    #wrapper {
+      padding: 20px;
+      margin-top: -1000px;
+      width: 800px;
+      height: 2000px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(98, 109, 124, 0.315);
+    }
+    @media ( max-width: 1200px) {
+      #bgpic {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1000px;
+        width: 1200px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: -1;
+      }
+      #wrapper {
+        padding: 20px;
+        margin-top: -1000px;
+        width: 800px;
+        height: 2000px;
+        margin-left: 180px;
+        margin-right: 200px;
+        background-color: rgba(98, 109, 124, 0.315);
+      }
+    }
+    #code {
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
 </head>
+
 <body>
-  
+  <div id="bgpic"></div>
+  <div id="wrapper">
+    <div id="code">
+      std::cout << "Hello world" << std::endl;
+    </div>
+    <div id="nav">Home | About</div>
+  </div>
 </body>
+
 </html>
