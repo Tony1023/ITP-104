@@ -1,70 +1,115 @@
 <!doctype html>
-<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Page Title</title>
-  <style>
-    body {
-      margin: 0;
-      color:floralwhite;
-    }
-    #bgpic {
-      background-image: url("background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 1000px;
-      width: 100%;
-      top: 0;
-      position: -webkit-sticky;
-      position: sticky;
-      z-index: -1;
-    }
-    #wrapper {
-      padding: 20px;
-      margin-top: -1000px;
-      width: 800px;
-      height: 2000px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: rgba(98, 109, 124, 0.315);
-    }
-    @media ( max-width: 1200px) {
-      #bgpic {
-        background-image: url("background.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 1000px;
-        width: 1200px;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: -1;
-      }
-      #wrapper {
-        padding: 20px;
-        margin-top: -1000px;
-        width: 800px;
-        height: 2000px;
-        margin-left: 180px;
-        margin-right: 200px;
-        background-color: rgba(98, 109, 124, 0.315);
-      }
-    }
-    #code {
-      font-family: 'Courier New', Courier, monospace;
-    }
-  </style>
+	<title>Page Title</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<style>
+		body {
+			overflow: auto;
+			font-family: 'Source Code Pro', monospace;
+		}
+		#code {
+			font-family: 'Courier New', Courier, monospace;
+			border: white solid 2px;
+			border-radius: 10px;
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+		}
+		#verticalLine1 {
+			border: white solid 1px;
+			height: 80px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 0;
+		}
+		#horizontalLine {
+			border: white solid 1px;
+		}
+		#bg {
+			height: 800px;
+		}
+		#wrapper {
+			margin-top: 50px;
+			padding-top: 50px;
+			height: 850px;
+		}
+		@media ( max-width: 1200px ) {
+			#bg {
+				padding-top: 0;
+			}
+			#wrapper {
+				margin-top: 50px;
+				padding-top: 50px;
+				height: 850px;
+			}
+		}
+		#verticalLine2 {
+			border: white solid 1px;
+			height: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 0;
+		}
+		#introduction {
+			margin-left: auto;
+			margin-right: auto;
+			border: white solid 2px;
+			border-radius: 15px;
+			width: 700px;
+			height: 500px;
+			padding: 0 40px 0 40px;
+		}
+		#introduction h1 {
+			display: block;
+			text-align: center;
+		}
+		#introduction h3 {
+			display: block;
+			text-align: center;
+			margin: 30px 0 30px 0;
+		}
+		#introduction strong {
+			font-size: 2em;
+			font-weight: 900;
+		}
+	</style>
 </head>
 
 <body>
-  <div id="bgpic"></div>
-  <div id="wrapper">
-    <div id="code">
-      std::cout << "Hello world" << std::endl;
-    </div>
-    <div id="nav">Home | About</div>
-  </div>
+	<div id="bg">
+		<div id="bgimg"><img src="background.jpg"></div>
+		<div id="wrapper">
+			<div id="code">
+				std::cout << "This is my personal website!" << std::endl;
+				console.log("Welcome!");
+			</div>
+			<div id="verticalLine1"></div>
+			<div id="nav">
+				<div class="navItem"><a href="home.html">Home</a></div>
+				<div class="navItem"><a href="projects.html">Projects</a></div>
+				<div class="navItem"><a href="info.html">Personal Info</a></div>
+				<div class="navItem"><a href="misc.html">Misc</a></div>
+				<div class="clearFloat"></div>
+			</div>
+			<div id="verticalLine2"></div>
+			<div id="introduction">
+				<h1>Zhehao Lu</h1>
+				<h3>--Software Engineer, Counter-Striker, Sports/eSports Fan--</h3>
+				<p>My name is Zhehao Lu, preferred name Tony. I was born and raised in Shenzhen, China before I came to the US for college last year.</p>
+				<p>I am currently a Freshman undergraduate student studying Computer Science at the Viterbi School of Engineering at the University of Southern California, looking to take a minor at the Marshall School of Buiness.</p>
+				<p>I like software developing, recently gaining an interest in backend development. Next semester I'm looking to join some CS organizations to work more with and for our USC community.</p>
+				<p>There are still a small bug in these pages. In a word, there is too much empty space for scrolling down.</p>
+				<p>Anyways, <strong>Fight on!</strong></p>
+				
+			</div>
+			<div id="copyright">© Zhehao Lu 2018 @USC, no rights reserved</div>
+		</div>
+	</div>
+
 </body>
 
 </html>
