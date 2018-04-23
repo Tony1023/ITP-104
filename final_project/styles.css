@@ -71,6 +71,14 @@ a:visited {
   border-right: white solid 1px;
 	float: left;
 }
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section {
+  position: relative;
+  border-top: solid 1px;
+}
 #copyright {
   position: absolute;
   width: 1000px;
