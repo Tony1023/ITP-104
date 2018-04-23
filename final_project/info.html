@@ -2,21 +2,86 @@
 <html>
 
 <head>
-  <title>Page Title</title>
-  <script type='text/javascript' src='repeatContent.js'></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <style>
-  </style>
+	<title>Page Title</title>
+	<script type='text/javascript' src='repeatContent.js'></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<style>
+		header {
+			text-align: center;
+			position: relative;
+			margin-bottom: 20px;
+		}
+		header img {
+			width: 150px;
+			position: absolute;
+			right: 20px;
+			top: 0px;
+		}
+		section {
+			position: relative;
+			border-top: solid 1px;
+		}
+		.rightImage {
+			position: absolute;
+			right: 20px;
+			width: 100px;
+		}
+		#uscIcon {
+			display: block;
+			background-color: rgba(100, 100, 100, 0.9);;
+		}
+
+
+	</style>
 </head>
 
 <body>
 
-  <div id="bgimg"> <img src="background.jpg"> </div>
-  <div id="wrapper">
-    <script>navBar()</script> Coming soon...
-    <script>copyright()</script>
-  </div>
+	<div id="bgimg"> <img src="background.jpg"> </div>
+	<div id="wrapper">
+		<script>navBar()</script>
+
+		<header>
+			<h1>Zhehao Lu (Tony)</h1>
+			<img src="http://scf.usc.edu/~zhehaolu/itp104/resume/avatar.jpg" alt="avatar icon">
+			<div class="clearfloat"></div>
+			+1-213-456-7890<br/>
+			<a href="mailto:zhehaolu@usc.edu" target="_top">zhehaolu@usc.edu</a>
+			<a href="mailto:tony1023lv@gmail.com" target="_top">tony1023lv@gmail.com</a>
+			<br/>
+			<address>3XXX-X, 3771 McClintock Ave., Los Angeles, CA, 90089</address>
+			<a href="https://github.com/Tony1023" target="_blank">github.com/Tony1023</a> 
+			<a href="https://devpost.com/Tony1023" target="_blank">devpost.com/Tony1023</a>
+		</header>	
+
+		<section>
+			<h1>Education</h1>
+			<p>
+				<img class="rightImage" id='uscIcon' src="http://scf.usc.edu/~zhehaolu/itp104/resume/usc.png" alt="USC logo"/>
+				<strong>University of Southern California</strong> - August 2017-present
+				<br/>Los Angeles, CA
+				<ul>
+					<li>Viterbi School of Engineering</li>
+					<li>Major: Computer Science, B.S.</li>
+					<li>GPA: 3.93</li>
+				</ul>
+			</p>
+			<p>
+				<strong>Shenzhen Foreign Languages School</strong> - August 2014-June 2017
+				<br/>Shenzhen, Guangdong, China
+				<ul>
+					<li>Principal's List &times; 5</li>
+					<li>Honor Graduate</li>
+					<li>GPA: 4.22</li>
+				</ul>
+			</p>
+
+		</section>
+
+
+		<script>copyright()</script>
+	</div>
 
 </body>
 
