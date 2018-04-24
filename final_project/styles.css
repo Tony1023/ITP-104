@@ -95,7 +95,7 @@ header {
   text-align: center;
   margin-bottom: 20px;
 }
-section {
+.body-section {
   position: relative;
   border-top: solid 1px;
   padding-bottom: 10px;
