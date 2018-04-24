@@ -2,6 +2,9 @@ body {
   margin: 0;
   color:floralwhite;
   overflow: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.codeFont, header{
   font-family: 'Source Code Pro', monospace;
 }
 #bgimg {
@@ -71,6 +74,23 @@ a:visited {
   border-right: white solid 1px;
 	float: left;
 }
+#projects {
+  position: relative;
+  display: inline-block;
+}
+#dropdown-content {
+  background-color:rgba(0, 0, 0, 0.75);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 150px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+#projects:hover #dropdown-content {
+  text-align: center;
+  display: block;
+}
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -78,6 +98,7 @@ header {
 section {
   position: relative;
   border-top: solid 1px;
+  padding-bottom: 10px;
 }
 #copyright {
   position: absolute;
