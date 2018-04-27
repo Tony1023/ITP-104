@@ -9,9 +9,9 @@ function navBar() {
         <a href="projects.html">Projects</a>\
         <div id="dropdown-content">\
           <a href="stellar.html">Stellar</a><br/>\
-          <a href="overryde.html">Overryde</a><br/>\
+          <a href="coming_soon.html">Overryde</a><br/>\
           <a href="librarian.html">Librarian</a><br/>\
-          <a href="ligo.html">LIGO</a><br/>\
+          <a href="coming_soon.html">LIGO</a><br/>\
         </div>\
       </div>\
       <div class="navItem"><a href="info.html">Personal Info</a></div>\
