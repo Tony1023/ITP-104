@@ -55,6 +55,12 @@ a:link {
 a:visited {
   color: lightgray;
 }
+#logo {
+  margin-bottom: 20px;
+}
+#logo img{
+  width: 1000px;
+}
 #nav {
   border-top: white solid 2px;
   border-bottom: white solid 2px;
