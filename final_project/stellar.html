@@ -7,6 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
 	<style>
+    #demo img {
+      float: left;
+      width: 250px;
+      display: block;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
 	</style>
 </head>
 
@@ -36,19 +43,38 @@
 			</p>
     </section>
 
-    <section class="proj-section">
+    <section id='demo' class="proj-section">
       <h2>Demo</h2>
+      <img src='stellar_gif1.gif' alt='demo1'>
+      <img src='stellar_gif2.gif' alt='demo2'>
+      <div class='clearFloat'></div>
     </section>
 
     <section class="proj-section">
       <h2>Some Techincal Details...</h2>
       <ul>
-        <li>Multithreading</li>
+        <li>Multithreading: animation (updating the display at 60 fps) and simulation (computing acceleration, velocity, and position) are on different threads, which immensely increases the efficiency of the program.</li>
+        <li>Multiple MVC: enable user selection of inital states and different versions of simulator.</li>
+        <li>Inheritance: it felt risky to simply use inheritance for the auto-restart simulator from the generic one. Its functionalities are very similar to that of the generic one, but still some distinctions exist. Also, there are a lot of gesture recognizers which made the issue more complicated. But things turned out pretty well.</li>
+        <li>Timer: the replay count-down is realized using iOS's timer.</li>
+        <li>Linear algebra/rotation matrices: I proudly applied a piece of textbook knowledge to the engineering of software. The rotation of view angles is enabled by 3D rotation matrices, by multiplying new rotations to the previous coordinates.</li>
       </ul>
     </section>
 
     <section class="proj-section">
       <h2>Motivation</h2>
+      <p>
+        Hope that you've heard about the novel, Three Body, by a Chinese writer, Cixin Liu. The original name of the project was named after that. Although I changed the name afterwards, the repository on Github is still named "Three-Body."
+      </p>
+      <p>
+        Three Body tells an amazing story about the aliens living in a three-star system trying to invade the Earth. They are unable to predict the stars movements (actually which is mathematically impossible for the time being) and thus always face the danger of extinction.
+      </p>
+      <p>
+        Thus, I was motivated to make such a simulator for myself to look for a stable solution not in the set of known ones. It's quite ambitious but this project is not that impossible. And it turned out very fun.
+      </p>
+      <p>
+        By the way, the novel is nothing like the classical (or mediocre) sci-fi about alien invasion. Really, give it a try! Personally, I think the second of the three-book series is the most fantastic one.
+      </p>
     </section>
 
 

@@ -11,7 +11,7 @@ function navBar() {
         <div id="dropdown-content">\
           <a href="stellar.html">Stellar</a><br/>\
           <a href="coming_soon.html">Overryde</a><br/>\
-          <a href="librarian.html">Librarian</a><br/>\
+          <a href="coming_soon.html">Librarian</a><br/>\
           <a href="coming_soon.html">LIGO</a><br/>\
         </div>\
       </div>\
