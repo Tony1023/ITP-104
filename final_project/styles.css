@@ -60,13 +60,13 @@ a:visited {
   border-bottom: white solid 2px;
   border-radius: 15px;
   height: 50px;
-  width: 600px;
+  width: 650px;
   padding-top: 10px;
   margin-right: auto;
   margin-left: auto;
 }
 .navItem {
-	width: 148px;
+	width: 128px;
 	height: 40px;
 	line-height: 40px;
   text-align: center;
@@ -82,7 +82,7 @@ a:visited {
   background-color:rgba(0, 0, 0, 0.75);
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 150px;
+  width: 130px;
   display: none;
   position: absolute;
   z-index: 1;

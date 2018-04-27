@@ -4,7 +4,8 @@ function copyright() {
 function navBar() {
   document.write(
     '<div class="codeFont" id="nav">\
-      <div class="navItem"><a href="index.html">Home</a></div>\
+    <div class="navItem"><a href="index.html">Home</a></div>\
+    <div class="navItem"><a href="info.html">About</a></div>\
       <div id="projects" class="navItem">\
         <a href="projects.html">Projects</a>\
         <div id="dropdown-content">\
@@ -14,8 +15,9 @@ function navBar() {
           <a href="coming_soon.html">LIGO</a><br/>\
         </div>\
       </div>\
-      <div class="navItem"><a href="info.html">Personal Info</a></div>\
-      <div class="navItem"><a href="misc.html">Misc</a></div><div class="clearFloat"></div>\
+      <div class="navItem"><a href="misc.html">Misc</a></div>\
+      <div class="navItem"><a href="contact.html">Contact</a></div>\
+      <div class="clearFloat"></div>\
     </div>'
   );
 }

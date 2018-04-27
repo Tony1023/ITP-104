@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Others</title>
+	<script type='text/javascript' src='write.js'></script>
+	<script>
+		const changePlaceHolder = () => {
+			let field = document.getElementById('contactField');
+			let selection = document.getElementById('selectContact');
+			switch(selection.value) {
+				case 'Email':
+					field.placeholder = 'example@xx.com';
+					field.style.width = '150px';
+					break;
+				case 'Text Message':
+					field.placeholder = '2134312345';
+					field.style.width = '150px';
+					break;
+				case 'Facebook DM':
+					field.placeholder = 'Mark Zuckerberg';
+					field.style.width = '150px';
+					break;
+				case 'Mailing':
+					field.placeholder = 'Full Address here...';
+					field.style.width = '600px';
+					break;
+			}
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+	<style>
+		#contactField {
+			width: 150px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="bgimg"> <img src="background.jpg"> </div>
+	<div id="wrapper">
+		<script>navBar()</script> 
+		
+		<header>
+			<h1>Contact Me</h1>
+			<h3>Thanks a lot for visiting my personal page! Feel free to leave a message!</h3>
+		</header>
+
+		<form action='' method=''>
+			<h3>A Little Survey</h3>
+			<div class='formRow'>
+				
+			</div>
+		</form>
+
+		<form action="" method="">
+			<h3>Comments or Feedback?</h3>
+			<div class='formRow'>
+				<label for='nameField'>How do I call you?</label>
+				<input type='text' name='name' id='nameField' placeholder='Alex'>
+			</div>
+			<div class='formRow'>
+				<label for='contactField'>How do I get back to you?</label>
+				<select name='method' id='selectContact' onchange="changePlaceHolder()">
+					<option>Email</option>
+					<option>Text Message</option>
+					<option>Facebook DM</option>
+					<option>Mailing</option>
+				</select>
+				<input type='text' name='contact' id='contactField' placeholder='example@xx.com'>
+			</div>
+			<div class='formRow'>
+				<label for='orgField'>What institution are you from?</label>
+				<input type='text' name='org' id='orgField' placeholder='None'>
+			</div>
+    </form>
+
+
+		<script>copyright()</script>
+	</div>
+
+
+</body>
+
+</html>
