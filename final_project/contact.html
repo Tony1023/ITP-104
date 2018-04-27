@@ -31,11 +31,35 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
 	<style>
+		form {
+			margin-left: auto;
+			margin-right: auto;
+		}
 		#contactField {
 			width: 150px;
 		}
+		.formRow {
+			margin: 5px 0 5px 0;
+		}
+		form label {
+			display: inline-block;
+			width: 220px;
+			margin-right: 5px;
+			text-align: right;
+		}
+		#nameField {
+			width: 200px;
+		}
+		#orgField {
+			width: 200px;
+		}
+		#comments {
+			width: 200px;
+			height: 50px;
+		}
 	</style>
 </head>
+
 
 <body>
 	<div id="bgimg"> <img src="background.jpg"> </div>
@@ -47,14 +71,15 @@
 			<h3>Thanks a lot for visiting my personal page! Feel free to leave a message!</h3>
 		</header>
 
-		<form action='' method=''>
+		<!-- <form action='' method=''>
 			<h3>A Little Survey</h3>
 			<div class='formRow'>
 				
-			</div>
-		</form>
 
-		<form action="" method="">
+			</div>
+		</form> -->
+
+		<form id='feedback' action="" method="">
 			<h3>Comments or Feedback?</h3>
 			<div class='formRow'>
 				<label for='nameField'>How do I call you?</label>
@@ -73,6 +98,14 @@
 			<div class='formRow'>
 				<label for='orgField'>What institution are you from?</label>
 				<input type='text' name='org' id='orgField' placeholder='None'>
+			</div>
+			<div class='formRow'>
+				<label for='comments'>Leave a message?</label>
+				<textarea id='comments' name='comments' placeholder='Anything you want to say to me...'></textarea>
+			</div>
+			<div class='formRow'>
+				<label> </label>
+				<input class='submitButton' type='submit'>
 			</div>
     </form>
 
