@@ -99,6 +99,12 @@ header {
   position: relative;
   border-top: solid 1px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.proj-section {
+  position: relative;
+  padding: 5px 10px 5px 10px;
 }
 #copyright {
   position: absolute;
